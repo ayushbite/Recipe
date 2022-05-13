@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipe';
+//navigate to toggle between shoppinglist and recipe
+navigateonclick(data){
+  console.log("from parrendt conponent"+data)
+}
 }
