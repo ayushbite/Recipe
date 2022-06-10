@@ -1,1 +1,13 @@
-<p>recipeitem works!</p>
+
+        <a href="#" (click)="onRecipeSelected()">
+                        <div class="card" style="width: 13rem;">
+                
+                <img [src]="recipeitem.imagePath" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{recipeitem.name}}</h5>
+                    <p class="card-text">{{recipeitem.description }}</p>
+
+                </div>
+            </div>
+            <hr>
+        </a>

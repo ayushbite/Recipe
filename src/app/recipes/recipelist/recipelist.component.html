@@ -7,19 +7,8 @@
 <div class="row">
     <div class="col-xs-12">
 
-        <a href="#" *ngFor="let recipe of recipes">
-            <div class="card" style="width: 13rem;">
-                <img [src]="recipe.imagePath" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">{{recipe.name}}</h5>
-                    <p class="card-text">{{recipe.description }}</p>
-
-                </div>
-            </div>
-            <hr>
-        </a>
-
-
-        <app-recipeitem></app-recipeitem>
+<app-recipeitem *ngFor="let recipeelement of recipes" 
+    [recipeitem]="recipeelement"
+></app-recipeitem>
     </div>
 </div>
